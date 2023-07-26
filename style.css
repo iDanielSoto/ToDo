@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://i.pinimg.com/564x/a8/9d/2b/a89d2bcd56e8be6da80c339646802dca.jpg');
+    backdrop-filter: blur(40px);
+    background-size: cover;
+}
+
+*::first-letter {
+    text-transform: capitalize;
+}
+
+h1 {
+    padding: 0;
+    color: #4f4c86;
+    text-shadow: rgba(148, 80, 179, 0.144) 3px 1px;
+    font-size: 64px;
+}
+
+.roundBorder {
+    border-radius: 10px;
+}
+
+.list {
+    margin: 25px auto;
+    padding: 25px;
+    background-color: rgba(237, 242, 252, 0.507);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    max-width: 350px;
+}
+
+.date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dateRight {
+    display: flex;
+    align-items: center;
+}
+
+#dateNumber {
+    color: #69659e;
+    font-size: 60px;
+}
+
+#dateText {
+    text-transform: uppercase;
+}
+
+#dateMonth, #dateYear {
+    margin-left: 7px;
+    font-size: 20px;
+}
+
+.add {
+    margin: 28px 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 35px auto;
+    grid-column-gap: 15px;
+}
+
+.tr {
+    margin: 28px 0;
+}
+
+input {
+    border: none;
+    padding: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.addTaskButton {
+    border: none;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+.task {
+    background-color: rgba(144, 156, 226, 0.80);
+    color: #ffffff;
+    padding: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    animation: alternate 1s;
+}
+
+.done {
+    background-color: rgba(187, 185, 185, 0.80);
+    text-decoration: line-through;
+    color: #0a0a0a;
+}
